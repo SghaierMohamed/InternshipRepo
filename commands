@@ -1,0 +1,6 @@
+
+git clone https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
+cd ~/$REPO_NAME
+git init
+git checkout -b $"main"
+git pull origin main

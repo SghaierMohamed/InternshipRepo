@@ -1,15 +1,21 @@
 export http_proxy="http://t0320531:12345@proxy.theresis.org:3128"
 export https_proxy="http://t0320531:12345@proxy.theresis.org:3128"
-git clone https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
-cd ~/$REPO_NAME
-git init
-git checkout -b $"main"
-git pull origin main
 
- 
+pip install "$(pwd)"
+
+ ## upload stuff
+
 git init
 git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/SghaierMohamed/InternshipRepo.git
 git push -u origin main
+
+# Download stuff
+ 
+git clone https://github.com/SghaierMohamed/InternshipRepo.git
+cd InternshipRepo
+
+git checkout -b $"main"
+git pull origin main
